@@ -1,18 +1,23 @@
-
-  <template>
-  <div>
-    Some default layout shared across all pages
-    <slot />
-  </div>
-
-</template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
+<template>
+    <v-app id="inspire">
+      <v-navigation-drawer v-model="drawer">
+        <!--  -->
+      </v-navigation-drawer>
+  
+      <v-app-bar>
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+  
+        <v-toolbar-title>Application</v-toolbar-title>
+      </v-app-bar>
+  
+      <v-main>
+        <!--  -->
+      </v-main>
+    </v-app>
+  </template>
+  
+  <script>
+    export default {
+      data: () => ({ drawer: null }),
+    }
+  </script>
