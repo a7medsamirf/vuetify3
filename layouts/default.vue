@@ -7,7 +7,9 @@
       <v-app-bar>
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
   
-        <v-toolbar-title>Application</v-toolbar-title>
+        <v-toolbar-title>Test Page</v-toolbar-title>
+        <v-spacer />
+          <theme-switcher />
       </v-app-bar>
   
       <v-main>
@@ -17,7 +19,9 @@
   </template>
   
   <script>
+import ThemeSwitcher from '~~/components/Header/ThemeSwitcher.vue'
     export default {
+  components: { ThemeSwitcher },
       data: () => ({ drawer: null }),
     }
   </script>
